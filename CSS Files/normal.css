@@ -1,0 +1,151 @@
+.Tab-Contents{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 2rem;
+}
+
+.Tab-Contents h1,p{
+	margin: 1.5rem;
+}
+
+h2{
+	font-size: 3rem;
+}
+
+#sideNavContent{
+	display: none;
+}
+
+/* Designing Home page */
+main{
+	width: 100%;
+}
+
+body{
+	background-color: #89CFF0;
+}
+
+.bg-img{
+	background-image: url("../Images/Road.jpg");
+}
+
+.full-bg{
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #89CFF0;
+}
+
+.transparent{
+	background-image: none;
+	background-color: transparent;
+}
+
+.Headline h1{
+	font-size: 6rem;
+}
+
+.Headline h1, .Headline h2{
+	display: block;
+	font-family: "Gabriela", "Times New Roman", serif;	
+	text-align: center;
+	color: #708090;
+}
+
+.Headline h2{
+	font-size: 1rem;
+}
+
+.Intro-Catch{
+	margin-top: 19rem;
+}
+
+.Intro-Catch p{
+	display: block; 
+	text-align: center;
+	font-family: "Open Sans", Arial, sans-serif;
+	padding: 0.3rem;
+}
+
+.Tools{
+	background-color: #FFFFFF;
+}
+
+.Tool{
+	display: flex;
+	flex-direction: row;
+}
+
+.Tool-Img, .Tool-Text{
+	width: 50%;
+}
+
+.Tool-Text a{
+	text-decoration: none;
+}
+
+.Tool-Text a:hover{
+	text-decoration: underline;
+}
+
+.Tool-Text a:visited{
+	color: #000000;
+}
+.Tool-Text h2, h3{
+	text-align: center;
+}
+
+.Tool-Text h2{
+	font-family: "Gabriela", "Times New Roman", serif;
+	font-size: 4rem;
+}
+
+.Tool-Text h3{
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 1rem;
+}
+
+.index a{
+	opacity: 0.7;
+	color: #000000;
+	background-color: #FFFFFF;
+	font-size: 1.5rem;
+	text-decoration: none;
+	display: block;
+	border:0 solid #89CFF0;
+	border-bottom-width: 0.1rem;
+	transition: 1s;
+}
+
+.index a:hover{
+	opacity: 1;
+	background-color: #89CFF0;
+}
+
+.index h2{
+	margin: 0;
+	text-align: center;
+	font-family: "Open Sans", Arial, sans-serif;
+}
+
+article>img{
+	max-width: 200px;
+}
+
+.Disclaimer p{
+	font-family: "Open Sans";
+}
+
+.Disclaimer a:visited{
+	color: #0000FF;
+}
+
+@media only screen and (max-width: 480px){
+	.Tab-Contents{width: 100%;}
+	.Tool{flex-direction: column;}
+	.Tool-Img, .Tool-Text{width: 100%}
+	.Headline h1{font-size: 4rem;}
+	.Tool-Text h2{font-size: 2.8rem;}
+}

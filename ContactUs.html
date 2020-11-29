@@ -1,0 +1,106 @@
+<!Doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="Description" content=""/>
+	<meta name="Keywords" content="IGCSE, IGtools, CIE, IG, O Level"/>
+	<meta name="author" content="Kevin @ Kyaw Thiha"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>IGtools</title>
+	<link rel="stylesheet" type="text/css" href="CSS Files/Corporate Style Sheet.css">
+	<link rel="stylesheet" type="text/css" href="CSS Files/ContactUs.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="HeaderAndAside">
+		<header class="fade">
+			<div class="logo">
+				<a href="Homepage.html"><img src="logo.png" alt="IGtools Logo"/></a>
+			</div>
+			<nav>
+				<div class="Main-Nav">
+					<a href="Homepage.html">Home</a>
+					<a href="AboutUs.html">About Us</a>
+					<a href="ContactUs.html">Contact Us</a>
+					<a href="Tutorials.html">Tutorials</a>
+				</div>
+				<div class="Nav-Dropdown-Container">
+					<h2>Tools <i class="Dropdown-Arrow"></i></h2>
+					<div class="Nav-Dropdown-Content">
+						<a href="PastPapers.html">My PastPapers</a>
+						<a href="BSKeyTerms.html">Business KeyTerms</a>
+						<a href="CSPre-Release.html">CS Pre-Release</a>
+					</div>
+				</div>
+			</nav>
+			<div class="Nav-Icon" onClick="nav()">
+				<span class="material-icons">view_headline</span>
+			</div>
+		</header>
+	</div>	
+	<div class="Body-Content">
+		<main>
+			<div class="Tab-Contents">
+				<section class="ContactUs">
+					<div class="Title">
+						<h1>Talk with IGCSEtools!!!</h1>
+					</div>
+					<form method="POST" action="">
+						<div class="Contact-Details">
+							<label for="name">Name:</label>
+							<input type="text" name ="Name" id="name" placeholder="Name(Optional)"/>
+							<br/>
+							<span class="Error-Message" id="nameError"></span>
+						</div>
+						<div class="Contact-Details">
+							<label for="email">Email:</label>
+							<input type="email" name="Email" id="email" placeholder="Email(Optional)"/>
+							<br/>
+							<span class="Error-Message" id="emailError"></span>
+						</div>
+						<div class="Choices-Tabs">
+							<input type="radio" name="reason" id="complain" value="Complain"/>
+							<label for="complain" id="complainLabel">Complain</label>
+							<input type="radio" name="reason" id="question" value="Question"/>
+							<label for="question" id="questionLabel">Question</label>
+							<input type="radio" name="reason" id="suggestion" value="Suggestion"/>
+							<label for="suggestion" id="suggestionLabel">Suggestion</label>
+							<input type="radio" name="reason" id="compliment" value="Compliment"/>
+							<label for="compliment" id="complimentLabel">Compliment</label>
+							<input type="radio" name="reason" id="others" value="Others"/>
+							<label for="others" id="othersLabel">Others</label>
+							<br/>
+							<span class="Error-Message" id="reasonError"></span>
+						</div>
+						<div class="Contact-Details">
+							<label for="detail">Details:</label>
+							<textarea id="detail" name="Detail">
+							</textarea>
+							<br/>
+							<span class="Error-Message" id="detailError"></span>
+						</div>
+						<div class="Contact-Submit">
+							<input type="button" onClick="validate()" value="Submit"/>
+						</div>
+					</form>
+				</section>
+				<section class="ThankYou">
+					<div class="Title">
+						<h1>Thank you so much for talking to us!</h1>
+					</div>
+					<img src="Images/Happy Face.png" alt="Happy Face"/>
+				</section>
+			</div>
+		</main>
+	</div>
+	<footer>
+		<a href="Copyright.html">Copyright</a>
+		<a href="Disclaimer.html">Disclaimer</a>
+		<a href="Credits.html">Credits</a>
+		<a href="Sitemap.html">Sitemap</a>
+	</footer>
+	<script type="text/javascript" src="Javascript Files/ContactUs.js"></script>
+	<script type="text/javascript" src="Javascript Files/Main.js"></script>
+</body>
+</html>

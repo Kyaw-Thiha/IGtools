@@ -1,0 +1,270 @@
+<!Doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="Description" content=""/>
+	<meta name="Keywords" content="IGCSE, IGtools, CIE, IG, O Level, Business Studies, Key Terms"/>
+	<meta name="author" content="Kevin @ Kyaw Thiha"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>IGtools</title>
+	<link rel="stylesheet" type="text/css" href="../CSS Files/Corporate Style Sheet.css">
+	<link rel="stylesheet" type="text/css" href="../CSS Files/Business Key Terms.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="HeaderAndAside">
+		<header class="fade">
+			<div class="logo">
+				<a href="Homepage.html"><img src="logo.png" alt="IGtools Logo"/></a>
+			</div>
+			<nav>
+				<div class="Main-Nav">
+					<a href="../Homepage.html">Home</a>
+					<a href="../AboutUs.html">About Us</a>
+					<a href="../ContactUs.html">Contact Us</a>
+					<a href="../Tutorials.html">Tutorials</a>
+				</div>
+				<div class="Nav-Dropdown-Container">
+					<h2>Tools <span class="material-icons">keyboard_arrow_down</span></h2>
+					<div class="Nav-Dropdown-Content fade">
+						<a href="../PastPapers.html">My PastPapers</a>
+						<a href="../BSKeyTerms.html">Business KeyTerms</a>
+						<a href="../CSPre-Release.html">CS Pre-Release</a>
+					</div>
+				</div>
+			</nav>
+			<div class="Nav-Icon" onClick="nav()">
+				<span class="material-icons">view_headline</span>
+			</div>
+		</header>
+		<aside>
+			<div class="SideNav-Content appear" id="sideNavContent">
+				<a href="../BSKeyTerms.html">Intro</a>
+				<a href="BSKeyTerms-1.html" class="SideNav-Chosen">Chapter-1</a>
+				<a href="BSKeyTerms-2.html">Chapter-2</a>
+				<a href="BSKeyTerms-3.html">Chapter-3</a>
+				<a href="BSKeyTerms-4.html">Chapter-4</a>
+				<a href="BSKeyTerms-5.html">Chapter-5</a>
+				<a href="BSKeyTerms-6.html">Chapter-6</a>
+				<a href="BSKeyTerms-7.html">Chapter-7</a>
+				<a href="BSKeyTerms-8.html">Chapter-8</a>
+				<a href="BSKeyTerms-9.html">Chapter-9</a>
+				<a href="BSKeyTerms-10.html">Chapter-10</a>
+				<a href="BSKeyTerms-11.html">Chapter-11</a>
+				<a href="BSKeyTerms-12.html">Chapter-12</a>
+				<a href="BSKeyTerms-13.html">Chapter-13</a>
+				<a href="BSKeyTerms-14.html">Chapter-14</a>
+				<a href="BSKeyTerms-15.html">Chapter-15</a>
+				<a href="BSKeyTerms-16.html">Chapter-16</a>
+				<a href="BSKeyTerms-17.html">Chapter-17</a>
+				<a href="BSKeyTerms-18.html">Chapter-18</a>
+				<a href="BSKeyTerms-19.html">Chapter-19</a>
+				<a href="BSKeyTerms-20.html">Chapter-20</a>
+				<a href="BSKeyTerms-21.html">Chapter-21</a>
+				<a href="BSKeyTerms-22.html">Chapter-22</a>
+				<a href="BSKeyTerms-23.html">Chapter-23</a>
+				<a href="BSKeyTerms-24.html">Chapter-24</a>
+				<a href="BSKeyTerms-25.html">Chapter-25</a>
+				<a href="BSKeyTerms-26.html">Chapter-26</a>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+			</div>
+			<div class="SideNav-Responsive">
+				<span id="openArrow" onClick="sideNav()"><i class="material-icons">keyboard_arrow_right</i></span>
+				<span id="closeArrow" onClick="sideNav()"><i class="material-icons">keyboard_arrow_left</i></span>
+			</div>
+		</aside>
+	</div>
+	<div class="Body-Content">
+		<main>
+			<section class="BSKeyTerms-Container">
+				<section class="BSKeyTerms-Title">
+				<h1>Chapter-1 (Business Activity)</h1>
+				</section>
+				<div class="BSKeyTerms-QuestionsAndAnswers-Container">
+					<div class="BSKeyTerms-Questions">
+						<div class="Number-Circle">1</div>
+						<label>Business Activity:</label>
+						<textarea value="" class="Answer-Space" onFocus="addEnter(0)"></textarea>
+						<div class="button button-blue" onClick="checkAnswer('process','','producing','manufacturing','goods and services','','demand','wants','0')">Check my answer</div>
+						<div class="button" onClick="showAnswer('modalAnswer1')">Show Me ANSWER!!!</div>
+						<div class="Symbol-Correct">&#10003;</div>
+						<div class="Symbol-Wrong">&#10007;</div>
+					</div>
+					<div class="BSKeyTerms-Answer" id="modalAnswer1">The process of producing goods and services to satisfy consumer demand.</div>
+					<hr/>
+				</div>
+				<div class="BSKeyTerms-QuestionsAndAnswers-Container">
+					<div class="BSKeyTerms-Questions">
+						<div class="Number-Circle">2</div>
+						<label>Need:</label>
+						<textarea value="" class="Answer-Space" onFocus="addEnter(1)"></textarea>
+						<div class="button button-blue" onClick="checkAnswer('good','product','essential','necessary','','','','','1')">Check my answer</div>
+						<div class="button" onClick="showAnswer('modalAnswer2')">Show Me ANSWER!!!</div>
+						<div class="Symbol-Correct">&#10003;</div>
+						<div class="Symbol-Wrong">&#10007;</div>
+					</div>
+					<div class="BSKeyTerms-Answer" id="modalAnswer2">A good or service which is essential to living</div>
+					<hr/>
+				</div>
+				<div class="BSKeyTerms-QuestionsAndAnswers-Container">
+					<div class="BSKeyTerms-Questions">
+						<div class="Number-Circle">3</div>
+						<label>Want:</label>
+						<textarea value="" class="Answer-Space" onFocus="addEnter(2)"></textarea>
+						<div class="button button-blue" onClick="checkAnswer('good','product','like','love','necessary','essential','','','2')">Check my answer</div>
+						<div class="button" onClick="showAnswer('modalAnswer3')">Show Me ANSWER!!!</div>
+						<div class="Symbol-Correct">&#10003;</div>
+						<div class="Symbol-Wrong">&#10007;</div>
+					</div>
+					<div class="BSKeyTerms-Answer" id="modalAnswer3">A good or service which people would like but is not essential for living.</div>
+					<hr/>
+				</div>
+				<div class="BSKeyTerms-QuestionsAndAnswers-Container">
+					<div class="BSKeyTerms-Questions">
+						<div class="Number-Circle">4</div>
+						<label>Economic Problem:</label>
+						<textarea value="" class="Answer-Space" onFocus="addEnter(3)"></textarea>
+						<div class="button button-blue" onClick="checkAnswer('unlimited want','','limited','','factors of production','factor of production','','','3')">Check my answer</div>
+						<div class="button" onClick="showAnswer('modalAnswer4')">Show Me ANSWER!!!</div>
+						<div class="Symbol-Correct">&#10003;</div>
+						<div class="Symbol-Wrong">&#10007;</div>
+					</div>
+					<div class="BSKeyTerms-Answer" id="modalAnswer4">Unlimited wants cannot be met because there are limited factors of production. This creates scarcity.</div>
+					<hr/>
+				</div>
+				<div class="BSKeyTerms-QuestionsAndAnswers-Container">
+					<div class="BSKeyTerms-Questions">
+						<div class="Number-Circle">5</div>
+						<label>Factors of Production:</label>
+						<textarea value="" class="Answer-Space" onFocus="addEnter(4)"></textarea>
+						<div class="button button-blue" onClick="checkAnswer('resources','','produce','','goods and services','services and goods','','','4')">Check my answer</div>
+						<div class="button" onClick="showAnswer('modalAnswer5')">Show Me ANSWER!!!</div>
+						<div class="Symbol-Correct">&#10003;</div>
+						<div class="Symbol-Wrong">&#10007;</div>
+					</div>
+					<div class="BSKeyTerms-Answer" id="modalAnswer5">The resources needed to produce goods and services - land, labour, capital, enterprise.</div>
+					<hr/>
+				</div>
+				<div class="BSKeyTerms-QuestionsAndAnswers-Container">
+					<div class="BSKeyTerms-Questions">
+						<div class="Number-Circle">6</div>
+						<label>Scarcity:</label>
+						<textarea value="" class="Answer-Space" onFocus="addEnter(5)"></textarea>
+						<div class="button button-blue" onClick="checkAnswer('enough','adequate','goods and services','services and goods','wants','demand','','','5')">Check my answer</div>
+						<div class="button" onClick="showAnswer('modalAnswer6')">Show Me ANSWER!!!</div>
+						<div class="Symbol-Correct">&#10003;</div>
+						<div class="Symbol-Wrong">&#10007;</div>
+					</div>
+					<div class="BSKeyTerms-Answer" id="modalAnswer6">There are not enough goods and services to meet the wants of the population.</div>
+					<hr/>
+				</div>
+				<div class="BSKeyTerms-QuestionsAndAnswers-Container">
+					<div class="BSKeyTerms-Questions">
+						<div class="Number-Circle">7</div>
+						<label>Opportunity Cost:</label>
+						<textarea value="" class="Answer-Space" onFocus="addEnter(6)"></textarea>
+						<div class="button button-blue" onClick="checkAnswer('benefit','advantage','gain','achieve','alternat','different','same resource','same','6')">Check my answer</div>
+						<div class="button" onClick="showAnswer('modalAnswer7')">Show Me ANSWER!!!</div>
+						<div class="Symbol-Correct">&#10003;</div>
+						<div class="Symbol-Wrong">&#10007;</div>
+					</div>
+					<div class="BSKeyTerms-Answer" id="modalAnswer7">The benefit that could have been gained from an alternative use of the same resource.</div>
+					<hr/>
+				</div>
+				<div class="BSKeyTerms-QuestionsAndAnswers-Container">
+					<div class="BSKeyTerms-Questions">
+						<div class="Number-Circle">8</div>
+						<label>Specialisation:</label>
+						<textarea value="" class="Answer-Space" onFocus="addEnter(7)"></textarea>
+						<div class="button button-blue" onClick="checkAnswer('concentrate','focus','best at','','','','','','7')">Check my answer</div>
+						<div class="button" onClick="showAnswer('modalAnswer8')">Show Me ANSWER!!!</div>
+						<div class="Symbol-Correct">&#10003;</div>
+						<div class="Symbol-Wrong">&#10007;</div>
+					</div>
+					<div class="BSKeyTerms-Answer" id="modalAnswer8">People and businesses concentrate on what they are best at.</div>
+					<hr/>
+				</div>
+				<div class="BSKeyTerms-QuestionsAndAnswers-Container">
+					<div class="BSKeyTerms-Questions">
+						<div class="Number-Circle">9</div>
+						<label>Division of Labour:</label>
+						<textarea value="" class="Answer-Space" onFocus="addEnter(8)"></textarea>
+						<div class="button button-blue" onClick="checkAnswer('production','manufactur','divide','seperate','task','work','','','8')">Check my answer</div>
+						<div class="button" onClick="showAnswer('modalAnswer9')">Show Me ANSWER!!!</div>
+						<div class="Symbol-Correct">&#10003;</div>
+						<div class="Symbol-Wrong">&#10007;</div>
+					</div>
+					<div class="BSKeyTerms-Answer" id="modalAnswer9">Production is divided into seperate tasks and each worker does just one of those tasks.</div>
+					<hr/>
+				</div>
+				<div class="BSKeyTerms-QuestionsAndAnswers-Container">
+					<div class="BSKeyTerms-Questions">
+						<div class="Number-Circle">10</div>
+						<label>Consumer Goods:</label>
+						<textarea value="" class="Answer-Space" onFocus="addEnter(9)"></textarea>
+						<div class="button button-blue" onClick="checkAnswer('product','good','final consumer','','tangible','see','','','9')">Check my answer</div>
+						<div class="button" onClick="showAnswer('modalAnswer10')">Show Me ANSWER!!!</div>
+						<div class="Symbol-Correct">&#10003;</div>
+						<div class="Symbol-Wrong">&#10007;</div>
+					</div>
+					<div class="BSKeyTerms-Answer" id="modalAnswer10">Products which are sold to the final consumer. They can be seen and touched.</div>
+					<hr/>
+				</div>
+				<div class="BSKeyTerms-QuestionsAndAnswers-Container">
+					<div class="BSKeyTerms-Questions">
+						<div class="Number-Circle">11</div>
+						<label>Consumer Services:</label>
+						<textarea value="" class="Answer-Space" onFocus="addEnter(10)"></textarea>
+						<div class="button button-blue" onClick="checkAnswer('physical','tangible','products','','consumer','final','','','10')">Check my answer</div>
+						<div class="button" onClick="showAnswer('modalAnswer11')">Show Me ANSWER!!!</div>
+						<div class="Symbol-Correct">&#10003;</div>
+						<div class="Symbol-Wrong">&#10007;</div>
+					</div>
+					<div class="BSKeyTerms-Answer" id="modalAnswer11">Non-tangible products which are sold to final consumers.</div>
+					<hr/>
+				</div>
+				<div class="BSKeyTerms-QuestionsAndAnswers-Container">
+					<div class="BSKeyTerms-Questions">
+						<div class="Number-Circle">12</div>
+						<label>Capital Goods:</label>
+						<textarea value="" class="Answer-Space" onFocus="addEnter(11)"></textarea>
+						<div class="button button-blue" onClick="checkAnswer('physical','tangible','other business','other firm','good','product','','','11')">Check my answer</div>
+						<div class="button" onClick="showAnswer('modalAnswer12')">Show Me ANSWER!!!</div>
+						<div class="Symbol-Correct">&#10003;</div>
+						<div class="Symbol-Wrong">&#10007;</div>
+					</div>
+					<div class="BSKeyTerms-Answer" id="modalAnswer12">Tangible goods sold to other businesses to help produce other goods and services.</div>
+					<hr/>
+				</div>
+			</section>
+			<section>
+				<a href = "../BSKeyTerms.html" class="button button-prev">&#60; Prev</a>
+				<a href = "BSKeyTerms-2.html" class="button button-next">Next &#62;</a>
+			</section>
+			<section class="Tutorial-Link-Container">
+				<a class="button Tutorial-Link" href="../Tutorials.html">Not sure how this works? Check our tutorial HERE</a>
+			</section>
+			<section class="Articles">
+				<article>
+					<h2>Disclaimer</h2>
+					<p>The IGtools website does not, in any way, guarantee you that your answers that had been marked as correct/wrong in our tool will be marked in a same way in the actual CIE business studies O Level paper.
+					All rights for the definitions of the keywords used from <a href="https://www.cambridge.org/hk/education/subject/business-and-economics/business-studies/cambridge-igcse-and-o-level-business-studies-revised-3rd-edition/cambridge-igcse-and-o-level-business-studies-revised-3rd-edition-coursebook?isbn=9781108563987" target="_blank">Business Studies Coursebook Revises Third Edition(ISBN: 9781108563987)</a> are reserved to the authors(Mark Fisher, Medi Houghton and Veenu Jain) and the Cambridge University Press &copy;. Note: Some of the definitions of the key terms used here may be edited subtly in order to enhance clarification of the user.</p>
+				</article>
+			</section>
+		</main>
+	</div>
+	<footer>
+		<a href="../Copyright.html">Copyright</a>
+		<a href="../Disclaimer.html">Disclaimer</a>
+		<a href="../Credits.html">Credits</a>
+		<a href="../Sitemap.html">Sitemap</a>
+	</footer>
+	<script src="../Javascript Files/BSKeyTerms.js"></script>
+	<script src="../Javascript Files/Main.js"></script>
+</body>
+</html>

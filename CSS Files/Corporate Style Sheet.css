@@ -1,0 +1,513 @@
+/* Adding the fonts Google fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Gabriela);
+
+/* Changing default settings */
+html, body{
+	margin:0;
+	padding:0;
+	height: 100%;
+	font-size: 20px;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+/* Creating background color */
+body{
+	background-color: #E8E8E8;
+}
+
+/* Creating animations */
+@keyframes fade{
+	0%{
+		opacity: 0;
+		transform: translateY(-1rem) scale(0.8);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0px) scale(1);
+	}
+}
+
+@-webkit-keyframes fade{
+	0%{
+		opacity: 0;
+		transform: translateY(-1rem) scale(0.8);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0px) scale(1);
+	}
+}
+
+/* Making sure that all header elements appear on one line */
+nav, .logo,.Main-Nav ,.Nav-Dropdown-Container{
+	display: inline-block;
+}
+
+/* Creating on hover dropdown for Tools */
+.Nav-Dropdown-Content{
+	opacity: 0;
+	z-index: -1;
+	transform: translateY(-10rem);
+	position: absolute;
+	background-image: linear-gradient(to right, #FDFD96,#F8ECAD);
+	transition-property: opacity, transform;
+	transition-duration: 3s, 1.5s;
+	transition-timing-function: ease-out;
+}
+
+.Nav-Dropdown-Container:hover .Nav-Dropdown-Content{
+	opacity: 1;
+	transform: translateY(0);
+	z-index: 3;
+}
+
+.Nav-Dropdown-Container:hover{
+	color: #2B82D9;
+}
+
+.Nav-Dropdown-Content a{
+	display: block;
+}
+
+/* Creating dropdown arrow */
+.Dropdown-Arrow{
+	border: solid #404040;
+	border-width: 0px 0.1rem 0.1rem 0px;
+	display: inline-block;
+	padding: 0.5vw;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+/* Decorating the header and footer */
+header, footer{
+	background-image: linear-gradient(#FDFD96,#F8ECAD);
+}
+
+.Nav-Dropdown-Container h2, .Main-Nav a, .Nav-Dropdown-Content a, footer a{
+	color: #404040;
+	font-size: 1.8rem;
+	font-weight: normal;
+	font-family: Arial, sans-serif;
+	text-decoration: none;
+	padding: 0.25rem;
+}
+
+.Nav-Dropdown-Container span{
+	vertical-align: middle;
+	font-size: 3rem;
+	margin-left: -0.7rem;
+}
+
+.Main-Nav a,footer a{
+	border: 1px;
+	border-radius: 3px;
+}
+
+.Main-Nav a:hover, .Nav-Dropdown-Content a:hover, footer a:hover{
+	transition: all 2s ease;
+	background-color: #FFFFFF;
+	border-color: #FFFFFF;
+}
+
+.Nav-Dropdown-Content a{
+	padding: 0.3rem;
+	animation-delay: 1s;
+	animation: fade 2s;
+}
+
+.Nav-Dropdown-Content a:nth-of-type(1){
+	animation-delay: 0.05s;
+}
+
+.Nav-Dropdown-Content a:nth-of-type(2){
+	animation-delay: 0.1s;
+}
+
+.Nav-Dropdown-Content a:nth-of-type(3){
+	animation-delay: 0.15s;
+}
+
+.Nav-Icon{
+	display: none;
+	color: #2b8d9;
+	color: #A0A0A0;
+}
+
+footer{
+	width: 100%;
+	position: relative;
+	height: 3rem;
+	margin-top: -3rem;
+	clear: both;
+}
+
+/* Creating a button */
+.button{
+	display: inline-block;
+	padding: 0.3rem;
+	background-color: #D3D3D3;
+	font-style: normal;
+}
+
+.button:hover{
+	border: 0.15vw solid #A0A0A0;
+}
+
+.button:active{
+	background-color: #A0A0A0;
+	opacity: 0.6;
+	font-style: italic;
+}
+
+/* Creating a number with circle in it */
+.Number-Circle{
+	width: 2rem;
+	line-height: 2rem;
+	border-radius: 50%;
+	border: 1px solid #000000;
+	text-align: center;
+	font-size: 1.3rem;
+	font-weight: bold;
+	display: inline-block;
+	background-color: #FFFFFF;
+}
+
+/* Pushing footer downwards */
+.Body-Content{
+	min-height: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+}
+
+main{
+	position: relative;
+	top: 0;
+	padding-top: 6rem;
+	padding-bottom: 3rem;
+	/*overflow: auto;*/ 
+	height: auto;
+}
+
+/* Designing the form */
+form{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+/* Creating a fixed main navigation and side navigation */
+.HeaderAndAside{
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+}
+
+footer{
+	z-index: 2;
+}
+
+/* Decorating the Side Navigation Bar */
+.SideNav-Content, .SideNav-Responsive{
+	display: inline-block;
+	position: fixed;
+}
+
+.SideNav-Content{
+	background-color: #89CFF0;
+	height: 90%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	padding-bottom: 8rem;
+	transition: 2s;
+	width: 7.5rem;
+}
+
+.SideNav-Content a{
+	padding: 0.3rem;
+	display: block;
+	color: #000000;
+	text-decoration: none;
+	font-family: Arial, sans-serif;
+	font-size: 1rem;
+	text-align: left;
+}
+
+.SideNav-Content a:hover{
+	background-color: #FFFFFF;
+	transition: 0.5s;
+}
+
+.SideNav-Responsive span{
+	background-color: #D3D3D3;
+	padding: 0.2rem;
+	opacity: 0.8;
+}
+
+.SideNav-Responsive span:hover{
+	border: 0.15rem solid #A0A0A0;
+}
+
+.SideNav-Responsive span:active{
+	background-color: #A0A0A0;
+	opacity: 0.6;
+}
+
+.SideNav-Responsive span:last-child{
+	display: none;
+}
+
+@media screen and (min-width: 768px){
+	.SideNav-Responsive span {display: none;}
+}
+
+.SideNav-Responsive i{
+	vertical-align: bottom;
+}
+
+.SideNav-Chosen{
+	background-color: #E8E8E8;
+}
+
+/* Previous and Next buttons */
+.button-prev,.button-next{
+	margin: 2vh 0vh;
+	text-decoration: none;
+	font-size: 1.5vw;
+	font-family: Arial,sans-serif;
+	color: #FFFFFF;
+	background-color: #436EEE;
+}
+
+.button-prev:hover, .button-next:hover{
+	border-color: #000000;
+}
+
+.button-next{
+	position: absolute;
+	right: 0;
+}
+
+/* Decorating the articles beneath main */
+.Articles{
+	margin-top: 5rem;
+}
+
+.Articles article{
+	border: 1px solid #000000;
+	margin-bottom: 2.5rem;
+}
+
+.Articles h2{
+	width: 100%;
+	background-color: #FFFFFF;
+	margin: 0 auto;
+	font-family: "Open Sans",Arial, sans-serif;
+	font-size: 2rem;
+}
+
+.Articles p{
+	margin: 0 auto;
+	padding-top: 1.3rem;
+	background-color: #A4D3EE;
+	text-indent: 4rem;
+	font-family: "Garamond";
+	font-size: 1.2rem;
+	line-height: 2rem;
+}
+
+.Articles a:active, .Articles a:visited{
+	color: #0000FF;
+}
+
+/* Setting the animation for the change in tabs */
+@keyframes tabChange{
+	0%{
+		transform: scale(0.7);
+		opacity: 0.5;
+	}
+	100%{
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+/* Decorating the tabs layout */
+.Title h1{
+	font-family: Gabriela, "Times New Roman", serif;
+	font-size: 3rem;
+}
+
+.Tabs>input{
+	display: none;
+}
+
+.Tabs>label{
+	position: relative;
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	transition: all 0.1s;
+	-o-transition: all 0.1s;	
+	-ms-transition: all 0.1s;	
+	-moz-transition: all 0.1s;	
+	-webkit-transition: all 0.1s;
+	border-radius: 5px;
+	box-shadow: 0px 2px rgba(0,0,0,0.2);
+	color: #A0A0A0;
+	opacity: 0.8;
+	padding: 0.8rem 1rem 0.8rem 0.7rem;
+	margin: 0 0.5vw 0.3vw 0;
+	background-color: #FFFFFF;
+}
+
+.Tabs>input:checked + label{
+	cursor: default;
+	color: #2b82d9;
+	opacity: 1;
+	margin-bottom: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	padding-bottom: 1.3rem;
+}
+
+.Tabs>label:hover{
+	color: #808080;
+	opacity: 1;
+}
+
+.Tab-Content{
+	margin: 0;
+	padding: 0.8rem;
+	display: none;
+	opacity: 0;
+	transition: all 1.5s;
+	-o-transition: all 0.5s;	
+	-ms-transition: all 0.5s;	
+	-moz-transition: all 0.5s;	
+	-webkit-transition: all 0.5s;
+}
+
+.Tab-Contents{
+	display: block;
+	width: 100%;
+	background-color: #FFFFFF;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	box-shadow: 0px 2px rgba(0,0,0,0.2);
+}
+
+.Tab-Content h2{
+	margin: 0;
+}
+
+#tab1:checked ~ .Tab-Contents>#content1, #tab2:checked ~ .Tab-Contents>#content2, #tab3:checked ~ .Tab-Contents>#content3{
+	opacity: 1;
+	display: block;
+	animation: tabChange 1s;
+}
+
+label i{
+	padding: 0.1rem;
+}
+
+/* Decorating the layout for first page of each tool */
+.Start{
+	width: 100%;
+	background-color: #98F5FF;
+	background-image: radial-gradient(#FFFFFF,#98F5FF);
+	height: 30rem;
+	padding: 4rem 0px;
+}
+
+.Start-Title, .Start-Links{
+	text-align: center;
+}
+
+.Start-Title h1{
+	font-family: "Gabriela",Arial, sans-serif;
+	font-size: 5rem;
+}
+
+.Start-Links a{
+	font-family: 'Times New Roman', serif;
+	font-size: 2rem;
+	color: #0000FF;
+	text-decoration: none;
+	padding: 1rem;
+	border: 1px solid #000000;
+	border-radius: 3px;
+}
+
+.Start-Links a:hover{
+	background-color: #FFFFFF;
+	transition: 0.5s;
+}
+
+/* Designing the tab option layout */
+.Choices-Tabs{
+	margin: 1rem;
+}
+
+.Choices-Tabs input{
+	display: none;
+}
+
+.Choices-Tabs label{
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	border: 1px solid #000000;
+	background-color: #FFFFFF;
+	color: #0000FF;
+	transition: 1s;
+	font-size: 1.5rem;
+}
+
+.Choices-Tabs label:hover{
+	background-color: #98F5FF;
+}
+
+#complain:checked ~ #complainLabel, #question:checked ~ #questionLabel, #suggestion:checked ~ #suggestionLabel, #compliment:checked ~ #complimentLabel, #others:checked ~ #othersLabel{
+	background-color: #98F5FF;
+	color: #000000;
+}
+
+img{
+	height: auto;
+	width: 100%;
+}
+
+/* Making the webpage to be responsive */
+@media only screen and (max-width: 480px){
+	.HeaderAndAside{position: absolute; height: 100%; z-index: 0;}
+	.Nav-Dropdown-Container h2, .Main-Nav a, .Nav-Dropdown-Content a, footer a{font-size:1rem;}
+	header:hover .Nav-Dropdown-Container h2, .Main-Nav a{font-size:1rem;}
+	.SideNav-Content{position: fixed; opacity: 0.8; width: 0%; height: 100%}
+	.SideNav-Content a{text-align: center;}
+	.Articles{margin-top: 2rem; padding-top: 2rem;}
+	.Articles h2{font-size: 1.3rem}
+	.Articles p{padding-top: 0.7rem; font-size: 1rem; line-height: 1.5rem;}
+	.Title h1{font-size: 2.1rem}
+	.Tabs>label{font-size: 0.8rem; margin: 0; padding: 0.1rem 0.1rem 0.5rem 0.1rem; width: 30%}
+	.Tabs>input:checked + label{padding-bottom: 0.8rem}
+	.Start{height: 30rem;}
+	.Start-Title h1{font-size: 3rem}
+	.Start-Links a{font-size: 1.5rem; padding: 0.5rem; margin-bottom: 0.5rem; display: block}
+}
+
+@media only screen and (max-width: 1024px){
+	main{padding-top: 0;margin-top: 2rem;}
+	nav{display: none; height: 100%; weight: 100%; position: absolute; right: 0; top: 0; background-color: #FFFFFF;}
+	.Nav-Dropdown-Content a{background-color: #FFFFFF; font-size: 0.8rem; border: 1px solid #AAAAAA;}
+	.Nav-Dropdown-Content{transform: translateX(15rem)}
+	.Nav-Dropdown-Container:hover .Nav-Dropdown-Content{transform: translateX(0)}
+	.Main-Nav a, .Nav-Dropdown-Container{display: block}
+	.Nav-Icon{display: inline-block; position: absolute; right: 0;}
+	.Nav-Dropdown-Container span{font-size: 1.5rem; margin-left: -0.3rem}
+}

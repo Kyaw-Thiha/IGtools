@@ -1,0 +1,153 @@
+/* Decorating the intro page */
+main{
+	margin-left: auto;
+	margin-right: auto;
+	width: 85vw;
+}
+
+@media screen and (min-width: 768px){
+	main {margin-left: 12vw;}
+}
+
+/* Animation for the items inside tabs */
+@keyframes dropdown{
+	0%{
+		transform: translateY(-25px);
+	}
+	
+	100%{
+		transform: translateY(0px);
+	}
+}
+
+/* Decorating the items inside each tabs */
+.Tab-Content>h2{
+	font-size: 1.5em;
+	font-family: Gabriela, "Times New Roman", serif;
+}
+
+.Tab-Content>p{
+	font-size: 0.8em;
+	font-family: 'Open Sans', "Arial", sans-serif;
+}
+
+.Tab-Content>p>span{
+	font-weight: bold;
+	font-size: 1em;
+}
+
+.Tab-Contents>input{
+	display: none;
+}
+
+.Tab-Contents>label{
+	display: inline-block;
+	width: 100%;
+}
+
+.PastPapers-Dropdown-Container>button{
+	display: inline-block;
+	width: 100%;
+	cursor: pointer;
+	background-color: #98F5FF;
+	text-align: left;
+	outline: none; 
+}
+
+.PastPapers-Dropdown-Container h3{
+	font-size: 1.6rem;
+	font-family: Gabriela, "Times New Roman", serif;
+	margin: 0.5rem;
+}
+
+.PastPapers-Dropdown-Container{
+	background-color: #98F5FF;
+	box-shadow: 0px 2px rgba(0,0,0,0.2); 
+	margin-bottom: 0.5rem;
+	border: 1px solid #666666;
+}
+
+.PastPapers-Dropdown-Contents{
+	background-color: #FFFFFF;
+	display: none;
+	max-height: 30rem;
+	overflow-y: scroll;
+}
+
+.PastPapers-PastPaper{
+	border-radius: 5px;
+	border: 1.5px solid #FFFFFF;
+	animation: dropdown 1s;
+}
+
+.PastPapers-PastPaper:nth-of-type(even){
+	background-color: #FDFD96;
+}
+
+.PastPapers-PastPaper:nth-of-type(odd){
+	background-color: #F8ECAD;
+}
+
+.PastPapers-PastPaper>a{
+	display: inline-block;
+	font-size: 1rem;
+	color: #000000;
+	text-decoration: none;
+	font-family: 'Open Sans', "Arial", sans-serif;
+	width: 94%;
+	vertical-align: top;
+	height: 41px;
+	transition: 1s;
+}
+
+.PastPapers-PastPaper>a:hover{
+	color: #2b82d9;
+	font-size: 1.2rem;
+	transform-origin: left;
+	transform: translateX(0.2vw);
+	background-color: #FFFFFF;
+	border-radius: 5px;
+}
+
+.PastPapers-PastPaper>p{
+	display: inline-block;
+	font-size: 1rem;
+	text-decoration: underline;
+	font-style: italic;
+	color: #A0A0A0;
+	margin: 0;
+	vertical-align: bottom;
+	text-align: right;
+	width: 38%;
+}
+
+.PastPapers-PastPaper-Icons{
+	display: inline-block;
+	width: 5%;
+}
+
+.Number-Circle{
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.Number-Circle:hover{
+	color: #2b82d9;
+	background-color: #FFFFFF;
+	transition: 1s;
+}
+
+.Number-Circle a{
+	color: #2b82d9;
+}
+
+.Number-Circle a:active{
+	border-color: #A0A0A0;
+}
+
+/* Making the webpage responsive */
+@media only screen and (max-width: 360px){
+	.PastPapers-PastPaper>a{width: 80%; font-size: 0.8rem}
+	.PastPapers-PastPaper>a:hover{font-size: 0.8rem}
+	.PastPapers-PastPaper p{display: none;}
+}

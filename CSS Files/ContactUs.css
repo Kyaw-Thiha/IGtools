@@ -1,0 +1,102 @@
+main{
+	padding-left: 1rem;
+	width: 95%;
+}
+
+form{
+	background-image: linear-gradient(#FFFFFF,#98F5FF);
+}
+
+/* Form layout used in Contact Us page */
+.Title h1{
+	text-align: center;
+}
+
+.Contact-Details{
+	margin: 1rem;
+	width: 100%;
+}
+
+.Contact-Details input{
+	font-family: "Times New Roman", serif;
+	font-size: 1.2rem;	
+	width: 30%;
+	padding: 0.5rem;
+	border: 1px solid #000000;
+	border-radius: 0.3rem;
+}
+
+.Contact-Details input:focus,.Contact-Details textarea:focus{
+	border: 1.5px solid #0000FF;
+}
+
+.Contact-Details label{
+	font-size: 1.5rem;
+	vertical-align: top;
+}
+
+.Contact-Details textarea{
+	font-family: "Times New Roman", serif;
+	font-size: 1.2rem;
+	padding: 0.5rem;
+	width: 50%;
+	border: 1px solid #000000;
+	border-radius: 0.3rem;
+}
+
+.Contact-Submit input{
+	font-size: 2rem;
+	font-family: "Open Sans", Arial, sans-serif;
+	background-color: #FFFFFF;
+	color: #0000FF;
+	border: 1px solid #000000;
+	border-radius: 1rem;
+	padding: 0.3rem;
+	transition: 1s;
+	margin: 1rem;
+}
+
+.Contact-Submit input:hover{
+	outline: none;
+	background-color: #A0A0A0;
+	color: #FFFFFF;
+}
+
+.Contact-Details span, .Choices-Tabs span{
+	font-size: 0.8rem;
+	font-family: "Open Sans", Arial, sans-serif;
+	color: #FF0000;
+	position: relative;
+	top: 0.5rem;
+}
+
+.ContactUs{
+	animation: tabChange 1s;
+}
+
+.ThankYou{
+	display: none;
+	background-image: radial-gradient(#FFFFFF,#98F5FF);
+	animation: tabChange 1s;
+}
+
+.ThankYou .Title{
+	margin: 1rem; 
+}
+
+.ThankYou img{
+	width: 100%;
+	height: auto;
+	max-width: 500px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media only screen and (max-width: 480px){
+	.Tab-Contents{width: 100%; margin-top: 0;}
+	.Contact-Details{margin-bottom: 0;}
+	.Contact-Details input, .Contact-Details textarea{width: 70%; display: block;}
+	.Contact-Details textarea{height: 8rem}
+	.Contact-Submit{margin-left: auto; margin-right: auto;}
+}

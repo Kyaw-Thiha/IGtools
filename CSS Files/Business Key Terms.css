@@ -1,0 +1,151 @@
+/*Creating animation for Side Navigation Bar */
+@keyframes appear{
+	from {width:0vw;}
+	to {width:10vw;}
+}
+
+@-webkit-keyframes appear{
+	from {width:0vw;}
+	to {width:10vw;}
+}
+
+.appear{
+	transition: 2s;
+}
+
+/* Decorating the Intro Page */
+main{
+	margin-left: auto;
+	margin-right: auto;
+	width: 85%;
+}
+
+@media screen and (min-width: 768px){
+	main {margin-left: 8rem;}
+}
+
+/* Link to tutorial */
+.Tutorial-Link-Container{
+	margin-bottom: 5rem;
+}
+
+.Tutorial-Link{
+	position: absolute;
+	right: 0;
+	text-decoration: none;
+	color: #0AA0FF;
+}
+
+.Tutorial-Link-Container a{
+	font-size: 1.2rem;
+}
+
+/* Creating a tick symbol */
+.Symbol-Correct{
+	width: 2rem;
+	line-height: 2rem;
+	border-radius: 50%;
+	border: 1px solid #000000;
+	text-align: center;
+	font-size: 1.5rem;
+	background-color: #00FF00;
+	display: inline-block;
+}
+
+/* Creating a cross(wrong) symbol */
+.Symbol-Wrong{
+	width: 2rem;
+	line-height: 2rem;
+	border-radius: 50%;
+	border: 1px solid #000000;
+	text-align: center;
+	font-size: 1.5rem;
+	background-color: #FF0000;
+	display: inline-block;
+}
+
+/* Decorating the chapter title */
+.BSKeyTerms-Title{
+	font-family: "Gabriela", "Times New Roman", serif;
+	font-size: 3rem;
+	padding: 1rem;
+	background-color: #98F5FF;
+	background-image: linear-gradient(#98F5FF,#FFFFFF)
+}
+
+/* Decorating the questions & answers section of Business Key Terms */
+.BSKeyTerms-Container{
+	min-width: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: #FDFD96;
+	background-color: #FFFFFF;
+	border: 2px solid #000000;
+}
+
+.BSKeyTerms-QuestionsAndAnswers-Container{
+	padding: 1rem 0.8rem 0 0.8rem;
+}
+
+.BSKeyTerms-QuestionsAndAnswers-Container label{
+	font-family: "Open Sans" ,Arial, sans-serif;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.BSKeyTerms-QuestionsAndAnswers-Container textarea{
+	height: 1.8rem;
+	width: 45%;
+	vertical-align: middle;
+	font-family: 'Baskerville', serif;
+	font-size: 1rem;
+	color: #000000;
+	background-color: #FFFFFF;
+	border: 1px solid #A0A0A0;
+	resize: none;
+}
+
+.BSKeyTerms-QuestionsAndAnswers-Container textarea:hover{
+	border: 1.5px solid #54A0D3;
+}
+
+.BSKeyTerms-QuestionsAndAnswers-Container textarea:focus{
+	height: 3rem;
+	outline: none;
+	border: 1.5px solid #54A0D3;
+}
+
+.button{
+	font-size: 1rem;
+}
+
+.button-blue{
+	background-color: #7BAFD4;
+}
+
+.Symbol-Correct, .Symbol-Wrong{
+	display: none;
+	margin-top: 0.2rem;
+}
+
+.BSKeyTerms-Answer{
+	padding: 0.2rem;
+	display: none;
+	font-size: 1rem;
+	background-image: radial-gradient(#FFFFFF,#EEEEEE);
+	margin-top: 0.5rem;
+}
+
+/* Making the page responsive */
+@media screen and (max-width: 480px){
+	main{width: 90%; padding: 0; margin: 1.5rem 0.2rem 3rem 1.5rem }
+	.BSKeyTerms-Title{font-size: 1.5rem; padding: 1.5rem 0.1rem}
+	.BSKeyTerms-Title h1{margin: 0; text-align: center}
+	.BSKeyTerms-Start{height: 30rem;padding: 10vh 0px;}
+	.BSKeyTerms-QuestionsAndAnswers-Container label{font-size: 1.5rem}
+	.BSKeyTerms-QuestionsAndAnswers-Container textarea{display: block; width: 100%; height: 5rem; font-size: 1.5rem; margin-top: 0.2rem;}
+	.BSKeyTerms-QuestionsAndAnswers-Container textarea:focus{height: 15rem;}
+	.BSKeyTerms-Answer{font-size: 1rem; }
+	.button{font-size: 1rem; margin-top: 0.4rem}
+	.Tutorial-Link-Container a{font-size: 1rem; margin: 1.5rem 0 2rem 0}
+}
